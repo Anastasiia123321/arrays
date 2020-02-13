@@ -43,15 +43,15 @@ function getRandomMarks(marks) {
 }
 const randomMarks = getRandomMarks(marks);
 
-const getPairsMarks = (pairsThemes, randomMarks) => {
-    const pairsMarksArr = [];
+const getRandomMarksOfStudents = (pairsThemes, randomMarks) => {
+    const marksOfStudentsArr = [];
     for(let i = 0; i < pairsThemes.length; i++) {
-        pairsMarksArr.push([...pairsThemes[i], randomMarks[i]]);
+        marksOfStudentsArr.push([...pairsThemes[i], randomMarks[i]]);
     }
-    return pairsMarksArr;
+    return marksOfStudentsArr;
 }
-const pairsMarks = getPairsMarks(pairsThemes, randomMarks);
-console.log(pairsMarks);
+const pairsMarks = getRandomMarksOfStudents(pairsThemes, randomMarks);
+
 
 
 const couples = getPairs(students);
