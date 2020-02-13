@@ -34,16 +34,24 @@ const getStudentsMarks = (students, marks) => {
 
 
 //task 4
+function getRandomMarks(marks) {
+    const randomMarksArr = [];
+    for(let i = 0; i <= marks.length; i++) {
+        randomMarksArr.push(marks[Math.trunc(Math.random() * marks.length)]);
+    }
+    return randomMarksArr;
+}
+const randomMarks = getRandomMarks(marks);
 
-const getRandomMarks = (pairsAndThemes) => {
-    const randomMarks = Math.floor(Math.random() * 5) + 1;
+const getRandomMarks = (pairsAndThemes, randomMarks) => {
+    const pairsAndRandomMarks = Math.floor(Math.random() * 5) + 1;
     const studentsMarks = [];
     for (let i = 0; i < pairsAndThemes.length; i++) {
         studentsMarks.push([...pairsAndThemes[i], randomMarks]);
     }
     return studentsMarks;
 }
-
+const resultOfGettingTogether = getRandomMarks(pairsAndThemes,randommarks);
 
 const couples = getPairs(students);
 console.log(couples);
