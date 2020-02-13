@@ -50,4 +50,4 @@ console.log(couples);
 const resultOfGettingTogether = getPairsWithThemes(couples, themes);
 console.log(resultOfGettingTogether);
 console.log(getStudentsMarks(students, marks));
-console.log(getRandomMarks(resultOfGettingTogether));
+console.log(getRandomMarks(pairsAndThemes));
