@@ -8,7 +8,6 @@ const getPairs = (students) => {
     return [[students[0], students[2]], [students[1], students[3]], [students[4], students[5]]];
 }
 
-
 //task 2
 
 const getPairsWithThemes = (pairs, themes) => {
@@ -19,24 +18,21 @@ const getPairsWithThemes = (pairs, themes) => {
     return pairsAndThemes;
 }
 
-
 //task 3
 
 const getStudentsMarks = (students, marks) => {
     let studentsMarks = [];
     for (let i = 0; i < students.length; i++) {
-        studentsMarks.push([students[i], marks[i]]);
+        studentsMarks.push([students[i] marks[i]]);
     }
     return studentsMarks;
 }
-
-
 //task 4
 
 const getRandomPairsMarks = (paired) => {
     const randomMarks = Math.floor(Math.random() * 5) + 1;
     const studentsMarks = [];
-    for (let i = 0; i < paired.length; i++) {
+    for (let i = 0; i < paired.lenth; i++) {
         studentsMarks.push([...paired[i], randomMarks]);
     }
     return studentsMarks;
@@ -48,3 +44,4 @@ const resultOfGettingTogether = getPairsWithThemes(couples, themes);
 console.log(resultOfGettingTogether);
 console.log(getStudentsMarks(students, marks));
 console.log(getRandomPairsMarks(resultOfGettingTogether));
+       
