@@ -8,7 +8,6 @@ const getPairs = (students) => {
     return [[students[0], students[2]], [students[1], students[3]], [students[4], students[5]]];
 }
 
-const couples = getPairs(students);
 
 //task 2
 
@@ -20,7 +19,6 @@ const getPairsWithThemes = (pairs, themes) => {
     return pairsAndThemes;
 }
 
-const resultOfGettingTogether = getPairsWithThemes(couples, themes);
 
 //task 3
 
@@ -44,8 +42,9 @@ const getRandomPairsMarks = (paired) => {
     return studentsMarks;
 }
 
-
+const couples = getPairs(students);
 console.log(couples);
+const resultOfGettingTogether = getPairsWithThemes(couples, themes);
 console.log(resultOfGettingTogether);
 console.log(getStudentsMarks(students, marks));
 console.log(getRandomPairsMarks(resultOfGettingTogether));
