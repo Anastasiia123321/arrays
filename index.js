@@ -23,7 +23,7 @@ const getPairsWithThemes = (pairs, themes) => {
 const getStudentsMarks = (students, marks) => {
     let studentsMarks = [];
     for (let i = 0; i < students.length; i++) {
-        studentsMarks.push([students[i] marks[i]]);
+        studentsMarks.push([students[i], marks[i]]);
     }
     return studentsMarks;
 }
@@ -32,7 +32,7 @@ const getStudentsMarks = (students, marks) => {
 const getRandomPairsMarks = (paired) => {
     const randomMarks = Math.floor(Math.random() * 5) + 1;
     const studentsMarks = [];
-    for (let i = 0; i < paired.lenth; i++) {
+    for (let i = 0; i < paired.length; i++) {
         studentsMarks.push([...paired[i], randomMarks]);
     }
     return studentsMarks;
